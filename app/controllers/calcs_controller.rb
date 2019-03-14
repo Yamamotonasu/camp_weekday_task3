@@ -4,7 +4,7 @@ class CalcsController < ApplicationController
     value2 = params[:value2].to_i
     operators = params[:operators]
     
-    @result =  case operators
+    @result = case operators
               when 'addition'
                 value1 + value2
               when 'subtraction'
